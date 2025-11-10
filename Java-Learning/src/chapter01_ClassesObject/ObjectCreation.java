@@ -1,26 +1,27 @@
 package chapter01_ClassesObject;
 class EmployeeData{
 		private int id;
-		private int name;
-		private int string;
+		private String name;
+		private String City;
 		public int getId() {
 			return id;
 		}
 		public void setId(int id) {
 			this.id = id;
 		}
-		public int getName() {
+		public String getName() {
 			return name;
 		}
-		public void setName(int name) {
+		public void setName(String name) {
 			this.name = name;
 		}
-		public int getString() {
-			return string;
+		public String getCity() {
+			return City;
 		}
-		public void setString(int string) {
-			this.string = string;
+		public void setCity(String city) {
+			City = city;
 		}
+
 }
 
 public class ObjectCreation {
@@ -28,9 +29,9 @@ public class ObjectCreation {
 
 		EmployeeData data= new EmployeeData();
 		data.setId(10);
-		data.setName(200);
-		data.setString(300);
+		data.setName("Nitesh");
+		data.setCity("Pune");
 		
-		System.out.println(data.getId() +" "+ data.getName() +" "+ data.getString());
+		System.out.println(data.getId() +" "+ data.getName() +" "+ data.getCity());
 	}
 }
